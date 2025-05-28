@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <div class="topnav">
+            <a class="active" href="#index.php">Home</a>
+            <a href="#working.php">Working</a>
+            <a href="#non-working.php">non-working</a>
+
+        </div>    
+
+
         <?php
         # This is my script
         // It is for practice
@@ -27,7 +35,12 @@
         <p> Random function stuff </p>
 
         <?php
+            $testVar = 4;
+            function test() {
+                echo "<p>Test var is: $testVar"; // this should be an error
+            }
 
+            test();
         ?>
     </body>
 </html>
